@@ -30,10 +30,12 @@ function shuffleArr(){
 function checkAnswer(){
     //console.log('clicked:', $(this).data().name);
     if ($(this).data().name === people[current].name){
-        console.log('correct');
+        //console.log('correct');
+        alert('Correct, next question');
         render();
     } else {
-        console.log('incorrect');
+        //console.log('incorrect');
+        alert('Incorrect, please try again');
     }
 }
 
